@@ -9,6 +9,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  position:sticky;
+  background: white;
+  top:0;
+  z-index:1;
 }
 
 .header__logo {
@@ -45,6 +49,11 @@ button {
 .about__sun-image {
   width: 100px;
   height: 100px;
+  position: absolute;
+  animation-name:rotation;
+	animation-duration:10s;
+	 animation-iteration-count:infinite;
+	 animation-timing-function:linear;
 }
 
 .about {
@@ -198,3 +207,13 @@ button:hover {
   .footer__links a{
     margin-bottom: 15px;
   }
+  .animate__animated.animate__fadeInLeftt{
+    --animate-duration: 2s;
+  }
+  .animate__animated.animate__fadeInRight{
+    --animate-duration: 2s;
+  }
+  @keyframes rotation{
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+    }
