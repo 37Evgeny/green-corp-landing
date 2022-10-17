@@ -282,6 +282,10 @@ button:hover {
     font-size: 18px;
     line-height: 26px;
     opacity: 0.7;
+    margin-right: 10px;
+  }
+  .features__clients-count{
+    font-size: 48px;
   }
 
  .features__feedback-right{
